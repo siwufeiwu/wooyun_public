@@ -13,8 +13,7 @@ class WooyunSpider(scrapy.Spider):
         'http://wooyun.org/bugs/new_public/'
     ]
 
-    def __init__(self,page_max=settings['PAGE_MAX_DEFAULT'],local_store=settings['LOCAL_STORE_DEFAULT'],\
-            update=settings['UPDATE_DEFAULT'],*args, **kwargs):
+    def __init__(self,page_max=settings['PAGE_MAX_DEFAULT'],local_store=settings['LOCAL_STORE_DEFAULT'],update=settings['UPDATE_DEFAULT'],*args, **kwargs):
         self.page_max = int(page_max)
         self.local_store = 'true' == local_store.lower()
         self.update = 'true' == update.lower()

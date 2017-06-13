@@ -6,6 +6,7 @@ import copy
 import codecs
 import pymongo
 from scrapy.conf import settings
+from scrapy import log
 from scrapy.exceptions import DropItem
 
 # Define your item pipelines here
